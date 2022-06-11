@@ -1,11 +1,8 @@
-let dForm = document.querySelector('#dForm')
-let tmbl = document.querySelector('#tmbl')
-
-let tdata = document.querySelector('#tdata')
-let tmbl2 = document.querySelector('#tmbl2')
-
+let createForm = document.querySelector('#createForm')
+let readData = document.querySelector('#database')
 let updateForm = document.querySelector('#updateForm')
-let tmbl3 = document.querySelector('#tmbl3')
+let delForm = document.querySelector('#deleteForm')
+let btn = document.querySelectorAll('.btn')
 
 class Button {
     constructor(element, btn, objname){
@@ -23,9 +20,11 @@ class Button {
     }
 }
 
-let createBtn = new Button(dForm, tmbl, 'createBtn')
-let readBtn = new Button(tdata, tmbl2, 'readBtn')
-let updateBtn = new Button(updateForm, tmbl3, 'updateBtn')
+let createBtn, readBtn, updateBtn, delBtn
+readBtn = new Button(database, btn[1], 'readBtn')
+updateBtn = new Button(updateForm, btn[2], 'updateBtn')
+delBtn = new Button(delForm, btn[3], 'delBtn')
+createBtn = new Button(createForm, btn[0], 'createBtn')
 
 // function showForm(){
 //     dForm.style.display = 'block'

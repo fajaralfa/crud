@@ -1,18 +1,10 @@
-#dForm {
+#createForm, #database, #updateForm, #deleteForm {
     display: none;
     padding-bottom: 25px;
 }
-#tdata {
-    display: none;
-    padding-bottom: 25px;
-}
-#updateForm {
-    display: none;
-    padding-bottom: 25px;
-}
-#dele
-#tdata th, #tdata tr, #tdata td{
+#database th, #database tr, #database td {
     border: 1px solid black;
+    padding: 5px;
 }
 #submit {
     background-color: blue;
@@ -21,4 +13,7 @@
     padding-left: 10px;
     padding-right: 10px;
     font-weight: bolder;
+}
+#updateForm #submit {
+    background-color: red;
 }
