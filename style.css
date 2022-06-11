@@ -1,0 +1,24 @@
+#dForm {
+    display: none;
+    padding-bottom: 25px;
+}
+#tdata {
+    display: none;
+    padding-bottom: 25px;
+}
+#updateForm {
+    display: none;
+    padding-bottom: 25px;
+}
+#dele
+#tdata th, #tdata tr, #tdata td{
+    border: 1px solid black;
+}
+#submit {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bolder;
+}
