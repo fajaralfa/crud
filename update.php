@@ -2,12 +2,11 @@
 
 include_once("config.php");
 
-$tname = $_POST["tname"];
-$name = $_POST["fname"];
-$birth = $_POST["birth"];
+$id = $_POST["id"];
+$name = $_POST["name"];
 $address = $_POST["address"];
 
-if($mysqli->query("UPDATE students SET name = '$name', birth_day = '$birth', address = '$address' WHERE name = '$tname';") == TRUE){
+if($mysqli->query("UPDATE students SET name = '$name', address = '$address' WHERE id = $id;") == TRUE){
     echo "success updating data";
 }else{
     echo "error updating data".$mysqli->error;

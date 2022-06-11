@@ -1,6 +1,5 @@
-#createForm, #database, #updateForm, #deleteForm {
+#createForm, #updateForm, #deleteForm {
     display: none;
-    padding-bottom: 25px;
 }
 #database th, #database tr, #database td {
     border: 1px solid black;

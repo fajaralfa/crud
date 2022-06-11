@@ -16,10 +16,10 @@ $result = mysqli_query($mysqli, "SELECT * FROM students;");
 <body>
 
 <div class="nav">
-    <button class="btn" onclick="createBtn.show()">Create</button>
-    <button class="btn" onclick="readBtn.show()">Read</button>
-    <button class="btn" onclick="updateBtn.show()">Update</button><br>
-    <button class="btn" onclick="delBtn.show()">Delete</button>
+    <button class="btn" onclick="suitch(1)">Create</button>
+    <button class="btn" onclick="suitch(2)">Read</button>
+    <button class="btn" onclick="suitch(3)">Update</button>
+    <button class="btn" onclick="suitch(4)">Delete</button>
 </div>
 
 <div class="createSection">
@@ -52,9 +52,9 @@ $result = mysqli_query($mysqli, "SELECT * FROM students;");
     echo mysqli_fetch_array($result);
     ?>
 <div class="updateSection">
-    <form id="updateForm" action="/update.php">
-        <label for="tname">Type target id (click read to show target id): </label><br>
-        <input type="text" name="id"><br><br>
+    <form id="updateForm" action="/update.php" method="POST">
+        <label for="id">enter the target id (click Read to show target id): </label><br>
+        <input type="text" name="id" style="width: 15px;"><br><br>
         Name<br><input type="text" name="name"><br>
         Address<br><input type="text" name="address"><br><br>
         <input type="submit" value="submit" id="submit"><br>
@@ -62,9 +62,10 @@ $result = mysqli_query($mysqli, "SELECT * FROM students;");
 </div>
 
 <div class="deleteSection">
-    <form id="deleteForm" action="">
-        <input type="radio">test
-        <input type="radio">test
+    <form id="deleteForm" action="/delete.php" method="POST">
+        <label for="id">enter the target id (click Read to show target id): </label><br>
+        <input type="text" name="id"><br><br>
+        <input type="submit" value="submit" id="submit">
     </form>
 </div>
 
