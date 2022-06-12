@@ -10,3 +10,4 @@ if($mysqli->query("DELETE FROM students WHERE id=$id") === true){
 }
 
 ?>
+<br><a href="/">Go Back</a>

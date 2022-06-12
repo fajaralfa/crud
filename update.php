@@ -12,3 +12,4 @@ if($mysqli->query("UPDATE students SET name = '$name', address = '$address' WHER
     echo "error updating data".$mysqli->error;
 }
 ?>
+<br><a href="/">Go Back</a>

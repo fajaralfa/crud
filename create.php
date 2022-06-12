@@ -12,3 +12,4 @@ if($mysqli->query("INSERT INTO students(name, address) VALUES('$name', '$address
 }
 
 ?>
+<br><a href="/">Go Back</a>
